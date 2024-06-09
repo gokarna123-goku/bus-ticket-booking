@@ -1,29 +1,31 @@
 // src/components/ThemeSwitcher.js
 import React, { useState, useEffect } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa6';
 
 const ThemeSwitcher = () => {
-    const [darkMode, setDarkMode] = useState(false);
+
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
     useEffect(() => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
-        setDarkMode(isDarkMode);
-    }, []);
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
-    useEffect(() => {
-        document.documentElement.classList.toggle('dark', darkMode);
-        localStorage.setItem('darkMode', darkMode);
-    }, [darkMode]);
-
-    const toggleDarkMode = () => {
-        setDarkMode((prevMode) => !prevMode);
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
     };
 
     return (
         <button
-            onClick={toggleDarkMode}
-            className="px-4 py-2 rounded-md bg-neutral-800 text-white"
+            onClick={toggleTheme}
+            className="dark:text-neutral-100 text-neutral-800 text-lg w-10 h-10 rounded-full bg-neutral-200 dark:bg-neutral-800/80 flex items-center justify-center"
         >
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
+            {/* {theme ? <FaMoon /> : <FaSun />} */}
+            {theme === 'dark' ? <FaMoon /> : <FaSun />}
         </button>
     );
 };
