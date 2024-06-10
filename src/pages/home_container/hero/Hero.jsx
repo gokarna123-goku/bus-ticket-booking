@@ -1,9 +1,4 @@
-import React from 'react'
-import Bus1 from "../../../assets/bus.png"
 import Bus2 from "../../../assets/bus5.png"
-import Bus3 from "../../../assets/bus2.png"
-import Bus4 from "../../../assets/bus3.png"
-import Bus5 from "../../../assets/bus4.png"
 
 import { motion } from "framer-motion";
 

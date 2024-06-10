@@ -3,6 +3,7 @@ import ThemeSwitcher from './components/theme/ThemeSwitcher'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import HomeContainer from './pages/home_container/HomeContainer'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -14,9 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeContainer />} />
           </Routes>
-          {/* <div className="mt-[8ch]">
-            <ThemeSwitcher />
-          </div> */}
+          <Footer />
         </div>
       </Router>
     </>
