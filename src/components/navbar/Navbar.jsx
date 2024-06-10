@@ -1,18 +1,19 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa6';
+import { FaBars, FaPhone } from 'react-icons/fa6';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import ThemeSwitcher from '../theme/ThemeSwitcher';
+
+import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
     const [open, setOpen] = React.useState(false);
 
     const navLinks = [
         { href: '/', label: 'Home' },
-        { href: '#about', label: 'About' },
-        { href: '#bus', label: 'bus' },
-        { href: '#resources', label: 'Resources' },
-        { href: '#instructors', label: 'Instructors' },
+        { href: '/about', label: 'About' },
+        { href: '/bus', label: 'Bus' },
+        { href: '/services', label: 'Services' },
     ];
 
     const handleClick = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
         <nav className='w-full h-[8ch] bg-neutral-100 dark:bg-neutral-900 flex items-center md:flex-row lg:px-28 md:px-16 sm:px-7 px-4 fixed top-0 z-50'>
             {/* Logo Section */}
             <Link to="/" className='text-xl text-neutral-800 dark:text-neutral-200 font-bold mr-16'>
-                <span className="text-violet-600">G</span>-LMS
+                <img src={Logo} alt="logo" className="w-40 h-auto object-contain" />
             </Link>
             {/* Toggle button */}
             <button
@@ -55,9 +56,23 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <div className='flex md:items-center sm:items-start items-start gap-x-5 gap-y-2 flex-wrap md:flex-row sm:flex-col flex-col text-base font-medium text-neutral-800'>
-                    <button className='bg-violet-600 px-4 py-2 rounded-full border border-violet-600 text-sm text-neutral-50 font-medium hover:bg-violet-600/5 hover:text-violet-600 ease-in-out duration-300'>
+                    {/* <button className='bg-violet-600 px-4 py-2 rounded-full border border-violet-600 text-sm text-neutral-50 font-medium hover:bg-violet-600/5 hover:text-violet-600 ease-in-out duration-300'>
                         Get Started
-                    </button>
+                    </button> */}
+
+                    <div className="relative bg-violet-600 rounded-md px-8 py-2 w-fit cursor-pointer">
+                        <div className="absolute top-[50%] -left-6 translate-y-[-50%] w-9 h-9 rounded-full bg-violet-600 border-4 border-neutral-100 dark:border-neutral-900 flex items-center justify-center">
+                            <FaPhone className='text-neutral-50 text-sm' />
+                        </div>
+                        <div className="space-y-0.5">
+                            <p className="text-xs text-neutral-200 font-light">
+                                Contact Us
+                            </p>
+                            <p className="text-xs font-normal text-neutral-50 tracking-wide">+91 1234567890</p>
+                        </div>
+                    </div>
+
+
                     <ThemeSwitcher />
                 </div>
             </div>

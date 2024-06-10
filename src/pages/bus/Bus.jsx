@@ -40,7 +40,7 @@ const Bus = () => {
             {/* Bus collection */}
             <div className="w-full grid grid-cols-3 gap-10">
                 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus1} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
@@ -54,7 +54,7 @@ const Bus = () => {
                     </div>
                 </Link>
 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus2} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
@@ -68,7 +68,7 @@ const Bus = () => {
                     </div>
                 </Link>
 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus3} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
@@ -82,7 +82,7 @@ const Bus = () => {
                     </div>
                 </Link>
                 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus4} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
@@ -96,7 +96,7 @@ const Bus = () => {
                     </div>
                 </Link>
 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus5} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
@@ -110,7 +110,7 @@ const Bus = () => {
                     </div>
                 </Link>
 
-                <Link to={"/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
+                <Link to={"/bus/bus-details"} className="w-full bg-neutral-200/60 block dark:bg-neutral-900/40 rounded-xl p-4">
                     <img src={Bus6} alt="bus img" className="w-full aspect-video object-contain object-center" />
                     <div className="px-3 py-4 space-y-2">
                         <div className="flex items-center justify-between">
