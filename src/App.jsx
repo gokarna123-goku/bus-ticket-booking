@@ -1,10 +1,10 @@
 import React from 'react'
-import ThemeSwitcher from './components/theme/ThemeSwitcher'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import HomeContainer from './pages/home_container/HomeContainer'
 import Footer from './components/footer/Footer'
 import Bus from './pages/bus/Bus'
+import Detail from './pages/bus/Detail'
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeContainer />} />
             <Route path="/bus" element={<Bus />} />
+            <Route path="/bus-details" element={<Detail />} />
           </Routes>
           <Footer />
         </div>
