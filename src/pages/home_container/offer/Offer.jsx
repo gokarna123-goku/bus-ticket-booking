@@ -19,7 +19,7 @@ const Offer = () => {
     };
     return (
         <div className='w-full lg:px-28 md:px-16 sm:px-7 px-4 mb-[8ch]'>
-            <h1 className='text-2xl font-medium mb-6'>Offers</h1>
+            <h1 className='text-2xl font-medium mb-6'>Special Offers</h1>
             <div className="grid grid-cols-2 gap-16">
                 <div className="w-full h-auto rounded-xl bg-zinc-200/30 dark:bg-zinc-800/20 p-8 flex items-center gap-x-3 shadow-md">
                     <img src={Save} alt="save" className="w-52 aspect-[2/1] object-contain object-center" />
@@ -30,7 +30,8 @@ const Offer = () => {
                         <div className="flex items-center gap-x-5">
                             <div className="w-fit border border-dashed px-4 py-1 border-neutral-300 dark:border-neutral-800 bg-violet-500/10 dark:bg-violet-800/5 rounded-md p-3">
                                 {
-                                    copied ? <span className="text-green-600">Copied</span>
+                                    copied
+                                        ? <span className="text-green-600">Copied</span>
                                         :
                                         <span className="text-violet-600">GTECH08</span>
                                 }
@@ -54,13 +55,14 @@ const Offer = () => {
                         <div className="flex items-center gap-x-5">
                             <div className="w-fit border border-dashed px-4 py-1 border-neutral-300 dark:border-neutral-800 bg-violet-500/10 dark:bg-violet-800/5 rounded-md p-3">
                                 {
-                                    copied ? <span className="text-green-600">Copied</span>
+                                    copied
+                                        ? <span className="text-green-600">Copied</span>
                                         :
                                         <span className="text-violet-600">GTECH08</span>
                                 }
                             </div>
                             {/* Copy icon */}
-                            <button onClick={handleCopy} className='text-xl text-violet-600'>
+                            <button className='text-xl text-violet-600'>
                                 <FaCopy />
                             </button>
                         </div>
