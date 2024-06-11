@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MdOutlineChair } from "react-icons/md";
 import { GiSteeringWheel } from "react-icons/gi";
+import { FaMoneyBill } from 'react-icons/fa6';
+import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 
 const Seat = ({ seatNumber, isSelected, onClick }) => {
     return (
@@ -96,6 +98,10 @@ const BusSeatLayout = () => {
                             Selected
                         </p>
                     </div>
+                    <div className="flex items-center gap-x-2">
+                        <RiMoneyRupeeCircleLine className='text-lg text-neutral-500 dark:text-neutral-400' />
+                        <p className="text-sm font-medium">Rs. 750</p>
+                    </div>
                 </div>
             </div>
 
@@ -112,6 +118,19 @@ const BusSeatLayout = () => {
                     </div>
                 </div>
             }
+
+            {
+                selectedSeats.length > 0 &&
+                <div className="!mt-5 flex items-center gap-x-4">
+                    <h3 className="text-lg font-semibold">Total Fair Prices:</h3>
+                    {/* Calculate the total price */}
+                    <p className="text-lg font-medium"> Rs. {selectedSeats.length * 750}</p>
+                    <span className="text-sm text-neutral-400 dark:text-neutral-600 font-normal">
+                        (Including of all taxes)
+                    </span>
+                </div>
+            }
+
         </div>
     );
 };
