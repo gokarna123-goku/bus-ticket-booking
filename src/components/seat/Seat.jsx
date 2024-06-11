@@ -12,7 +12,7 @@ const Seat = ({ seatNumber, isSelected, onClick }) => {
 };
 
 const BusSeatLayout = () => {
-    const totalSeats = 50;
+    const totalSeats = 41;
     const [selectedSeats, setSelectedSeats] = useState([]);
 
     const handleSeatClick = (seatNumber) => {

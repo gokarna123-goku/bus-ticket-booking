@@ -3,6 +3,8 @@ import Bus from "../../assets/bus9.png"
 import { FaStar } from 'react-icons/fa6'
 import Seat from '../../components/seat/Seat';
 import Destination from '../../components/destination/Destination';
+import { Link } from 'react-router-dom';
+import BusTime from '../../components/time/Time';
 
 const Detail = () => {
     return (
@@ -34,15 +36,19 @@ const Detail = () => {
                 </div>
 
                 <div className="col-span-1 space-y-10">
-                    <Destination />
+                    <div className="space-y-6">
+                        <Destination />
+
+                        <BusTime />
+                    </div>
                     {/*  */}
                     <Seat isSelected onClick={() => { }} />
 
                     {/* Checkout button */}
                     <div className="flex">
-                        <button className="w-fit bg-violet-600 text-neutral-50 font-medium text-base px-6 py-2 rounded-md hover:bg-violet-700 ease-in-out duration-300">
+                        <Link to={"/bus/bus-details/checkout"} className="w-fit bg-violet-600 text-neutral-50 font-medium text-base px-6 py-2 rounded-md hover:bg-violet-700 ease-in-out duration-300">
                             Processed to Checkout
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
