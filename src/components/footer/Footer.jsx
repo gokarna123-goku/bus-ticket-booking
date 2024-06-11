@@ -2,13 +2,15 @@ import React from 'react'
 import { FaMapPin } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
+import Logo from "../../assets/logo.png";
+
 const Footer = () => {
     return (
         <footer className="w-full lg:px-28 md:px-16 sm:px-7 px-4 py-8 bg-neutral-200/60 dark:bg-neutral-900/70">
             <div className="grid grid-cols-5 gap-5">
                 <div className="space-y-5 col-span-2">
-                    <Link to="/" className='text-4xl text-neutral-800 dark:text-neutral-200 font-bold'>
-                        <span className="text-violet-600">G</span>-LMS
+                    <Link to="/" className='text-xl text-neutral-800 dark:text-neutral-200 font-bold'>
+                        <img src={Logo} alt="logo" className="w-44 h-auto object-contain" />
                     </Link>
                     <p className="text-neutral-600 dark:text-neutral-500 text-base font-normal pr-10">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat corporis, rerum laborum optio laboriosam perferendis sit culpa doloribus, tempora aliquam repellendus reprehenderit, ullam alias.
@@ -91,7 +93,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </footer>
     )
