@@ -55,6 +55,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                
                 <div className='flex md:items-center sm:items-start items-start gap-x-5 gap-y-2 flex-wrap md:flex-row sm:flex-col flex-col text-base font-medium text-neutral-800'>
                     {/* <button className='bg-violet-600 px-4 py-2 rounded-full border border-violet-600 text-sm text-neutral-50 font-medium hover:bg-violet-600/5 hover:text-violet-600 ease-in-out duration-300'>
                         Get Started

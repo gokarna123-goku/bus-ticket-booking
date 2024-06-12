@@ -50,6 +50,8 @@ const BusSeatLayout = () => {
                 Choose a Seat
             </h2>
 
+            {/* Seat layout */}
+
             <div className="w-full flex justify-between">
                 <div className="flex-1 w-full flex">
                     <div className="w-full h-full flex-1 flex gap-x-5 items-stretch">
@@ -57,6 +59,7 @@ const BusSeatLayout = () => {
                             <GiSteeringWheel className='text-3xl mt-6 text-violet-600 -rotate-90' />
                         </div>
 
+                        {/* Seat layout */}
                         <div className="flex flex-col items-center">
                             <div className="flex-1 space-y-4">
                                 <div className="w-full h-auto grid grid-cols-10 gap-x-3">
@@ -79,6 +82,9 @@ const BusSeatLayout = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Instructiona & Information */}
+
                 <div className="space-y-3 w-28">
                     <div className="flex items-center gap-x-2">
                         <MdOutlineChair className='text-lg text-neutral-500 -rotate-90' />
@@ -105,6 +111,8 @@ const BusSeatLayout = () => {
                 </div>
             </div>
 
+            {/* Show seletected seats */}
+
             {
                 selectedSeats.length > 0 &&
                 <div className="!mt-10">
@@ -118,6 +126,8 @@ const BusSeatLayout = () => {
                     </div>
                 </div>
             }
+
+            {/* Price calculation */}
 
             {
                 selectedSeats.length > 0 &&
