@@ -12,7 +12,7 @@ Install with npm
 Clone the project
 
 ```bash
-  git clone https://github.com/gtech-official08/bus-ticket-booking-setup.git
+  git clone https://github.com/gokarna123-goku/bus-ticket-booking.git
 ```
 
 Remove `.git` an `README.md` if you want to push this repo on your github.com.
