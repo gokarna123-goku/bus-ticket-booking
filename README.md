@@ -1,7 +1,7 @@
 
 # Online Bus Ticket Booking System (starter template)
 
-This is just a starter template containing Navbar, Footer, and Theme Switcher Section. And also installed the required resources like react icons, framer motion, and other basic requirements.
+This is just a Online Bus Ticket Booking Website using ReactJs & Tailwind CSS. And also installed the required resources like react icons, framer motion, and other basic requirements.
 
 
 
